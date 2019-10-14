@@ -28,10 +28,10 @@ const styles = StyleSheet.create({
   },
   BigText: {
     color: '#4A4A4A',
-    fontSize: 35,
+    fontSize: 32,
     fontWeight: '700',
     paddingBottom: 40,
-    paddingTop: 35,
+    paddingTop: 20,
   },
   LowerText: {
     color: '#CFCFCF',
@@ -45,26 +45,27 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     marginTop: -25,
     textAlign: 'center',
-    paddingHorizontal: 60,
-    lineHeight: 30,
+    paddingHorizontal: 45,
+    lineHeight: 27,
+    paddingBottom: 35,
   },
   ViewContainer: {
     display: 'flex',
     alignItems: 'center',
-    marginBottom: 200,
-    paddingTop: 200,
+    marginBottom: 185,
+    paddingTop: 130,
   },
   profileImgContainer: {
-    height: 200,
-    width: 200,
+    height: 185,
+    width: 185,
     borderRadius: 100,
     overflow: 'hidden',
     marginTop: 50,
   },
   profileImg: {
     marginLeft: -8,
-    height: 200,
-    width: 200,
+    height: 185,
+    width: 185,
     borderRadius: 100,
   },
   Shadow: {
@@ -83,42 +84,12 @@ class Ble extends React.Component {
 
   render() {
     return (
-      // <View>
-      //   <View style={styles.ViewContainer}>
-      //     <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
-      //     <Text style={styles.LowerText}>Currently no Beacons found.</Text>
-      //   </View>
-      //   <View style={styles.MainContainer}>
-      //     <TouchableOpacity
-      //       style={styles.SubmitButtonStyle}
-      //       activeOpacity={0.5}
-      //       onPress={this.ButtonClickCheckFunction()}>
-      //       <Text style={styles.TextStyle}> Scan for Beacons </Text>
-      //     </TouchableOpacity>
-      //   </View>
-      // </View>
       <View>
         <View style={styles.ViewContainer}>
-          <View style={styles.Shadow}>
-            <TouchableHighlight
-              style={[
-                styles.profileImgContainer,
-                {borderColor: '#0076FF', borderWidth: 8},
-              ]}>
-              <Image
-                source={require('../images/dino.png')}
-                style={styles.profileImg}
-              />
-            </TouchableHighlight>
-          </View>
-          <Text style={styles.BigText}>T-Rex</Text>
-          <Text style={styles.InfoText}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-          </Text>
+          <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
+          <Text style={styles.LowerText}>Currently no Beacons found.</Text>
+        </View>
+        <View style={styles.MainContainer}>
           <TouchableOpacity
             style={styles.SubmitButtonStyle}
             activeOpacity={0.5}
@@ -127,6 +98,36 @@ class Ble extends React.Component {
           </TouchableOpacity>
         </View>
       </View>
+      // <View>
+      //   <View style={styles.ViewContainer}>
+      //     <View style={styles.Shadow}>
+      //       <TouchableHighlight
+      //         style={[
+      //           styles.profileImgContainer,
+      //           {borderColor: '#0076FF', borderWidth: 7},
+      //         ]}>
+      //         <Image
+      //           source={require('../images/dino.png')}
+      //           style={styles.profileImg}
+      //         />
+      //       </TouchableHighlight>
+      //     </View>
+      //     <Text style={styles.BigText}>T-Rex</Text>
+      //     <Text style={styles.InfoText}>
+      //       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+      //       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+      //       erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+      //       et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+      //       Lorem ipsum dolor sit amet.
+      //     </Text>
+      //     <TouchableOpacity
+      //       style={styles.SubmitButtonStyle}
+      //       activeOpacity={0.5}
+      //       onPress={this.ButtonClickCheckFunction()}>
+      //       <Text style={styles.TextStyle}> Scan for Beacons </Text>
+      //     </TouchableOpacity>
+      //   </View>
+      // </View>
     );
   }
 }
