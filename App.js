@@ -1,7 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
 import {createAppContainer} from 'react-navigation';
-import Ionicons from 'react-native-ionicons';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import Ble from './Ble.js';
 import QR from './QR.js';
@@ -16,7 +15,6 @@ class HomeScreen extends React.Component {
     );
   }
 }
-
 class SettingsScreen extends React.Component {
   render() {
     return (
@@ -27,7 +25,7 @@ class SettingsScreen extends React.Component {
   }
 }
 
-export default createAppContainer(
+const AppContainer = createAppContainer(
   createBottomTabNavigator(
     {
       Home: HomeScreen,
@@ -37,23 +35,17 @@ export default createAppContainer(
       defaultNavigationOptions: ({navigation}) => ({
         tabBarIcon: ({focused, horizontal, tintColor}) => {
           const {routeName} = navigation.state;
-          // let IconComponent = Ionicons;
-          // let iconName;
-          // if (routeName === 'Home') {
-          //   iconName = `wifi`;
-          // } else if (routeName === 'Settings') {
-          //   iconName = `qr-scanner`;
-          // }
-          // You can return any component that you like here!
-          // return <IconComponent name={iconName} size={25} color={tintColor} />;
-
           let svgName;
           if (routeName === 'Home') {
             svgName = 'Ble';
           } else if (routeName === 'Settings') {
-            svgName = 'Qr'
+            svgName = 'Qr';
           }
-          return <Icon name={svgName} fill={tintColor} />;
+          return (
+            <View style={{paddingTop: 40}}>
+              <Icon name={svgName} fill={tintColor} />
+            </View>
+          );
         },
       }),
       tabBarOptions: {
@@ -63,4 +55,24 @@ export default createAppContainer(
       },
     },
   ),
+);
+
+export default () => (
+  <View style={{flex: 1}}>
+    <View
+      style={{
+        position: 'absolute',
+        zIndex: 1,
+        bottom: 40,
+        left: 165,
+        shadowColor: 'black',
+        shadowOffset: {width: 0, height: 10},
+        shadowOpacity: 0.1,
+        shadowRadius: 11.14,
+        elevation: 17,
+      }}>
+      <Icon name="Logo2" width="80" height="80" />
+    </View>
+    <AppContainer />
+  </View>
 );
