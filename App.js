@@ -1,24 +1,43 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import Ble from './Ble.js';
 import QR from './QR.js';
 import Icon from './components/Icon';
 
-class HomeScreen extends React.Component {
+const styles = StyleSheet.create({
+  Logo: {
+    position: 'absolute',
+    bottom: 40,
+    zIndex: 1,
+    display: 'flex',
+    alignSelf: 'center',
+    shadowColor: 'black',
+    shadowOffset: {width: 0, height: 10},
+    shadowOpacity: 0.1,
+    shadowRadius: 11.14,
+    elevation: 17,
+  },
+  ViewContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+class BLEScreen extends React.Component {
   render() {
     return (
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.ViewContainer}>
         <Ble />
       </View>
     );
   }
 }
-class SettingsScreen extends React.Component {
+class QRScreen extends React.Component {
   render() {
     return (
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <View style={styles.ViewContainer}>
         <QR />
       </View>
     );
@@ -28,17 +47,17 @@ class SettingsScreen extends React.Component {
 const AppContainer = createAppContainer(
   createBottomTabNavigator(
     {
-      Home: HomeScreen,
-      Settings: SettingsScreen,
+      Ble: BLEScreen,
+      Qr: QRScreen,
     },
     {
       defaultNavigationOptions: ({navigation}) => ({
         tabBarIcon: ({focused, horizontal, tintColor}) => {
           const {routeName} = navigation.state;
           let svgName;
-          if (routeName === 'Home') {
+          if (routeName === 'Ble') {
             svgName = 'Ble';
-          } else if (routeName === 'Settings') {
+          } else if (routeName === 'Qr') {
             svgName = 'Qr';
           }
           return (
@@ -59,18 +78,7 @@ const AppContainer = createAppContainer(
 
 export default () => (
   <View style={{flex: 1}}>
-    <View
-      style={{
-        position: 'absolute',
-        zIndex: 1,
-        bottom: 40,
-        left: 165,
-        shadowColor: 'black',
-        shadowOffset: {width: 0, height: 10},
-        shadowOpacity: 0.1,
-        shadowRadius: 11.14,
-        elevation: 17,
-      }}>
+    <View style={styles.Logo}>
       <Icon name="Logo2" width="80" height="80" />
     </View>
     <AppContainer />

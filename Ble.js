@@ -3,12 +3,10 @@ import {Text, View, TouchableOpacity, StyleSheet, Alert} from 'react-native';
 import Icon from './components/Icon';
 
 const styles = StyleSheet.create({
-  MainContainer: {
-    paddingTop: 200,
-  },
+  MainContainer: {},
   SubmitButtonStyle: {
     paddingHorizontal: 35,
-    paddingVertical: 18,
+    paddingVertical: 17,
     backgroundColor: '#0076FF',
     borderRadius: 40,
     borderWidth: 0,
@@ -20,6 +18,18 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     textAlign: 'center',
   },
+  LowerText: {
+    color: '#CFCFCF',
+    fontSize: 15,
+    fontWeight: '700',
+    marginTop: -25,
+  },
+  ViewContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: 200,
+    paddingTop: 200,
+  },
 });
 
 class Ble extends React.Component {
@@ -29,17 +39,11 @@ class Ble extends React.Component {
 
   render() {
     return (
-      <View style={{display: 'flex', alignItems: 'center'}}>
-        <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
-        <Text
-          style={{
-            color: '#CFCFCF',
-            fontSize: 15,
-            fontWeight: '700',
-            marginTop: -25,
-          }}>
-          Currently no Beacons found.
-        </Text>
+      <View>
+        <View style={styles.ViewContainer}>
+          <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
+          <Text style={styles.LowerText}>Currently no Beacons found.</Text>
+        </View>
         <View style={styles.MainContainer}>
           <TouchableOpacity
             style={styles.SubmitButtonStyle}

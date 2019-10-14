@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RN_finalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_finalTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -15,11 +16,11 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RN_finalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_finalTests.m */; };
+		2EECF438142941118D9CEB9C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */; };
 		5974DCDFB0B442240442C8C7 /* libPods-RN_final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D103909AD0ABB516AC1D346 /* libPods-RN_final.a */; };
 		76FD5B2DFC55CE071418E840 /* libPods-RN_finalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */; };
 		D162C5C98BF83BEFF50DC02D /* libPods-RN_final-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE303CD5EE9FF24E5853CFA /* libPods-RN_final-tvOS.a */; };
 		E45B8FF43AFFA87F462A4DD7 /* libPods-RN_final-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C2B6C62E2384AA1EA95CBF /* libPods-RN_final-tvOSTests.a */; };
-		2EECF438142941118D9CEB9C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RN_finalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RN_finalTests.m; sourceTree = "<group>"; };
 		07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_finalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RN_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RN_final/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RN_final/AppDelegate.m; sourceTree = "<group>"; };
@@ -67,7 +69,6 @@
 		F4C2EA908832E4DCC2D9044B /* Pods-RN_finalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_finalTests.release.xcconfig"; path = "Target Support Files/Pods-RN_finalTests/Pods-RN_finalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8993AB770AB58A31A2505E3 /* Pods-RN_final-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-RN_final-tvOSTests/Pods-RN_final-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FDCE72643D3112B793F90AEB /* Pods-RN_final-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-RN_final-tvOS/Pods-RN_final-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +150,6 @@
 				1E9A3AC1C62700C00BFC19C2 /* Pods-RN_finalTests.debug.xcconfig */,
 				F4C2EA908832E4DCC2D9044B /* Pods-RN_finalTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -164,6 +164,14 @@
 				07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3AB7AF331F461595550F99 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -199,15 +207,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		5E3AB7AF331F461595550F99 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -301,7 +300,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 287XHQKY7N;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 287XHQKY7N;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -319,6 +322,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -595,6 +599,7 @@
 			baseConfigurationReference = 1E9A3AC1C62700C00BFC19C2 /* Pods-RN_finalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -619,6 +624,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				INFOPLIST_FILE = RN_finalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -640,6 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				INFOPLIST_FILE = RN_final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -647,7 +654,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final";
 				PRODUCT_NAME = RN_final;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -659,6 +666,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				INFOPLIST_FILE = RN_final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -666,7 +674,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final";
 				PRODUCT_NAME = RN_final;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
