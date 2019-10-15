@@ -9,7 +9,7 @@ import Icon from './components/Icon';
 const styles = StyleSheet.create({
   Logo: {
     position: 'absolute',
-    bottom: 40,
+    bottom: 43,
     zIndex: 1,
     display: 'flex',
     alignSelf: 'center',

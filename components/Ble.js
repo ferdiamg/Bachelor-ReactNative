@@ -78,57 +78,72 @@ const styles = StyleSheet.create({
 });
 
 class Ble extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showInfo: false,
+    };
+  }
+
   ButtonClickCheckFunction = () => () => {
     Alert.alert('Scanning..');
+    this.setState({
+      showInfo: true,
+    });
   };
 
   render() {
-    return (
-      <View>
-        <View style={styles.ViewContainer}>
-          <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
-          <Text style={styles.LowerText}>Currently no Beacons found.</Text>
+    if (!this.state.showInfo) {
+      return (
+        <View>
+          <View style={styles.ViewContainer}>
+            <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
+            <Text style={styles.LowerText}>Currently no Beacons found.</Text>
+          </View>
+          <View style={styles.MainContainer}>
+            <TouchableOpacity
+              style={styles.SubmitButtonStyle}
+              activeOpacity={0.5}
+              onPress={this.ButtonClickCheckFunction()}>
+              <Text style={styles.TextStyle}> Scan for Beacons </Text>
+            </TouchableOpacity>
+          </View>
         </View>
-        <View style={styles.MainContainer}>
-          <TouchableOpacity
-            style={styles.SubmitButtonStyle}
-            activeOpacity={0.5}
-            onPress={this.ButtonClickCheckFunction()}>
-            <Text style={styles.TextStyle}> Scan for Beacons </Text>
-          </TouchableOpacity>
+      );
+    } else {
+      return (
+        <View>
+          <View style={styles.ViewContainer}>
+            <View style={styles.Shadow}>
+              <TouchableHighlight
+                style={[
+                  styles.profileImgContainer,
+                  {borderColor: '#0076FF', borderWidth: 7},
+                ]}>
+                <Image
+                  source={require('../images/dino.png')}
+                  style={styles.profileImg}
+                />
+              </TouchableHighlight>
+            </View>
+            <Text style={styles.BigText}>T-Rex</Text>
+            <Text style={styles.InfoText}>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              Lorem ipsum dolor sit amet.
+            </Text>
+            <TouchableOpacity
+              style={styles.SubmitButtonStyle}
+              activeOpacity={0.5}
+              onPress={this.ButtonClickCheckFunction()}>
+              <Text style={styles.TextStyle}> Scan for Beacons </Text>
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
-      // <View>
-      //   <View style={styles.ViewContainer}>
-      //     <View style={styles.Shadow}>
-      //       <TouchableHighlight
-      //         style={[
-      //           styles.profileImgContainer,
-      //           {borderColor: '#0076FF', borderWidth: 7},
-      //         ]}>
-      //         <Image
-      //           source={require('../images/dino.png')}
-      //           style={styles.profileImg}
-      //         />
-      //       </TouchableHighlight>
-      //     </View>
-      //     <Text style={styles.BigText}>T-Rex</Text>
-      //     <Text style={styles.InfoText}>
-      //       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      //       nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-      //       erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-      //       et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-      //       Lorem ipsum dolor sit amet.
-      //     </Text>
-      //     <TouchableOpacity
-      //       style={styles.SubmitButtonStyle}
-      //       activeOpacity={0.5}
-      //       onPress={this.ButtonClickCheckFunction()}>
-      //       <Text style={styles.TextStyle}> Scan for Beacons </Text>
-      //     </TouchableOpacity>
-      //   </View>
-      // </View>
-    );
+      );
+    }
   }
 }
 
