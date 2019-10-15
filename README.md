@@ -14,3 +14,7 @@ cd ios, pod install
 
 Since iOS 13 iOS needs AlwaysUsageBluetooth in info.plist when using BLE
 Same in Android
+
+For Android:
+Create local.properties file under /android/ and add SDK path:
+sdk.dir = /Users/ferdiarmagan/Library/Android/sdk

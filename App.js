@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Platform} from 'react-native';
 import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import Ble from './components/Ble.js';
@@ -9,7 +9,7 @@ import Icon from './components/Icon';
 const styles = StyleSheet.create({
   Logo: {
     position: 'absolute',
-    bottom: 43,
+    bottom: Platform.OS === 'ios' ? 43 : 10,
     zIndex: 1,
     display: 'flex',
     alignSelf: 'center',
@@ -23,6 +23,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  TabBar: {
+    paddingTop: Platform.OS === 'ios' ? 40 : 16,
   },
 });
 class BLEScreen extends React.Component {
@@ -61,7 +64,7 @@ const AppContainer = createAppContainer(
             svgName = 'Qr';
           }
           return (
-            <View style={{paddingTop: 40}}>
+            <View style={styles.TabBar}>
               <Icon name={svgName} fill={tintColor} />
             </View>
           );
