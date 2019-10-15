@@ -2,9 +2,9 @@
 My bachelor thesis project (Bluetooth Low Energy with iBeacons, QR Scanner) implemented in Facebook's React Native for iOS and Android
 
 Dependencies:
-react-native-gesture-handler: ^1.4.1
-react-native-ionicons: ^4.6.1
-react-native-reanimated: ^1.3.0
+react-native-gesture-handler: 1.4.1
+react-native-ionicons: 4.6.1
+react-native-reanimated: 1.3.0
 react-native-screens: 1.0.0-alpha.23
 react-native-svg: 9.11.1
 react-native-svg-icon: 0.8.1
