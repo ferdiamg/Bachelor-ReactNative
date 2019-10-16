@@ -12,14 +12,15 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		269836899C8EB78E210CDD1B /* libPods-RN_final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 892CD1AEFB45F92D465B7956 /* libPods-RN_final.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* RN_finalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RN_finalTests.m */; };
 		2EECF438142941118D9CEB9C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */; };
-		5974DCDFB0B442240442C8C7 /* libPods-RN_final.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D103909AD0ABB516AC1D346 /* libPods-RN_final.a */; };
-		76FD5B2DFC55CE071418E840 /* libPods-RN_finalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */; };
+		A2CFBF74235709C200D6DB15 /* Ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CFBF73235709C200D6DB15 /* Ble.swift */; };
 		D162C5C98BF83BEFF50DC02D /* libPods-RN_final-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE303CD5EE9FF24E5853CFA /* libPods-RN_final-tvOS.a */; };
+		E03A4D6C4BD5C718A4D3D8A3 /* libPods-RN_finalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4565C51ECBCA12F42EB4833D /* libPods-RN_finalTests.a */; };
 		E45B8FF43AFFA87F462A4DD7 /* libPods-RN_final-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C2B6C62E2384AA1EA95CBF /* libPods-RN_final-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +46,6 @@
 		00E356EE1AD99517003FC87E /* RN_finalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RN_finalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RN_finalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RN_finalTests.m; sourceTree = "<group>"; };
-		07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_finalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08BB692E7C5D4F5EA471ECBA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-ionicons/fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RN_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RN_final/AppDelegate.h; sourceTree = "<group>"; };
@@ -57,10 +57,13 @@
 		1E9A3AC1C62700C00BFC19C2 /* Pods-RN_finalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_finalTests.debug.xcconfig"; path = "Target Support Files/Pods-RN_finalTests/Pods-RN_finalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* RN_final-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RN_final-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* RN_final-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RN_final-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D103909AD0ABB516AC1D346 /* libPods-RN_final.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_final.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4565C51ECBCA12F42EB4833D /* libPods-RN_finalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_finalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE0AB44DA6231DFE049C90D /* Pods-RN_final-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RN_final-tvOSTests/Pods-RN_final-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87C2B6C62E2384AA1EA95CBF /* libPods-RN_final-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_final-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		892CD1AEFB45F92D465B7956 /* libPods-RN_final.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_final.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE303CD5EE9FF24E5853CFA /* libPods-RN_final-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RN_final-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CFBF72235709C200D6DB15 /* RN_final-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RN_final-Bridging-Header.h"; sourceTree = "<group>"; };
+		A2CFBF73235709C200D6DB15 /* Ble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ble.swift; sourceTree = "<group>"; };
 		ACA5FD82DC6F9B83318FAE59 /* Pods-RN_final.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final.release.xcconfig"; path = "Target Support Files/Pods-RN_final/Pods-RN_final.release.xcconfig"; sourceTree = "<group>"; };
 		CA083463BA8C32EF324E180C /* Pods-RN_final.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final.debug.xcconfig"; path = "Target Support Files/Pods-RN_final/Pods-RN_final.debug.xcconfig"; sourceTree = "<group>"; };
 		DE759E63B9E6065A6D61C99B /* Pods-RN_final-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RN_final-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RN_final-tvOS/Pods-RN_final-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FD5B2DFC55CE071418E840 /* libPods-RN_finalTests.a in Frameworks */,
+				E03A4D6C4BD5C718A4D3D8A3 /* libPods-RN_finalTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5974DCDFB0B442240442C8C7 /* libPods-RN_final.a in Frameworks */,
+				269836899C8EB78E210CDD1B /* libPods-RN_final.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +161,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				4D103909AD0ABB516AC1D346 /* libPods-RN_final.a */,
 				8CE303CD5EE9FF24E5853CFA /* libPods-RN_final-tvOS.a */,
 				87C2B6C62E2384AA1EA95CBF /* libPods-RN_final-tvOSTests.a */,
-				07188DE519EBB75F7B0E3E18 /* libPods-RN_finalTests.a */,
+				892CD1AEFB45F92D465B7956 /* libPods-RN_final.a */,
+				4565C51ECBCA12F42EB4833D /* libPods-RN_finalTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A2CFBF73235709C200D6DB15 /* Ble.swift */,
 				13B07FAE1A68108700A75B9A /* RN_final */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RN_finalTests */,
@@ -191,6 +195,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				13F5FA30FFEE5C25CDF029B2 /* Pods */,
 				5E3AB7AF331F461595550F99 /* Resources */,
+				A2CFBF72235709C200D6DB15 /* RN_final-Bridging-Header.h */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -305,13 +310,16 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 287XHQKY7N;
+						LastSwiftMigration = 1110;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 287XHQKY7N;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 287XHQKY7N;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -544,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CFBF74235709C200D6DB15 /* Ble.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -598,12 +607,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E9A3AC1C62700C00BFC19C2 /* Pods-RN_finalTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 287XHQKY7N;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RN_finalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -622,9 +633,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4C2EA908832E4DCC2D9044B /* Pods-RN_finalTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = 287XHQKY7N;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RN_finalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -644,9 +657,11 @@
 			baseConfigurationReference = CA083463BA8C32EF324E180C /* Pods-RN_final.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 287XHQKY7N;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RN_final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -656,6 +671,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final";
 				PRODUCT_NAME = RN_final;
+				SWIFT_OBJC_BRIDGING_HEADER = "RN_final-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -665,8 +683,10 @@
 			baseConfigurationReference = ACA5FD82DC6F9B83318FAE59 /* Pods-RN_final.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 287XHQKY7N;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RN_final/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -676,6 +696,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final";
 				PRODUCT_NAME = RN_final;
+				SWIFT_OBJC_BRIDGING_HEADER = "RN_final-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -691,8 +713,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RN_final-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -700,7 +724,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RN_final-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -720,7 +744,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RN_final-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -728,7 +754,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RN_final-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.armaganvideos.RN-final-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -746,8 +772,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RN_final-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -774,7 +802,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 287XHQKY7N;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "RN_final-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
