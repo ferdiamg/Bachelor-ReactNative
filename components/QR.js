@@ -1,57 +1,73 @@
 import React from 'react';
-import {Text, View, Linking, StyleSheet, TouchableOpacity} from 'react-native';
+import {Text, View, Linking, StyleSheet} from 'react-native';
 import QRCodeScanner from 'react-native-qrcode-scanner';
+import Icon from './Icon';
 
 const styles = StyleSheet.create({
-  centerText: {
-    flex: 1,
+  topArea: {
+    height: 375,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
+  Instructions: {
+    paddingBottom: 40,
+    display: 'flex',
+    alignItems: 'center',
+    marginTop: -60,
+  },
+  SmallText: {
+    color: '#CFCFCF',
+    fontSize: 15,
+    fontWeight: '700',
+    paddingTop: 6,
+    paddingBottom: 20,
+  },
+  BigText: {
+    color: '#4A4A4A',
     fontSize: 18,
-    padding: 32,
-    color: '#777',
+    fontWeight: '800',
   },
-  textBold: {
-    fontWeight: '500',
-    color: '#000',
-  },
-  buttonText: {
-    fontSize: 21,
-    color: 'rgb(0,122,255)',
-  },
-  buttonTouchable: {
-    padding: 16,
+  container: {},
+  camera: {
+    height: 220,
+    width: 220,
+    display: 'flex',
+    alignItems: 'center',
+    alignSelf: 'center',
   },
 });
+
 class QR extends React.Component {
   onSuccess = e => {
-    Linking.openURL(e.data).catch(err =>
-      console.error('An error occured', err),
-    );
+    // Linking.openURL(e.data).catch(err =>
+    //   console.error('An error occured', err),
+    // );
+    alert(e.data);
   };
 
   render() {
     return (
-      <View style={{display: "flex", alignItems: "center", marginTop: -420}}>
-        <Text style={{color: '#4A4A4A', fontSize: 18, fontWeight: '800'}}>
-          Place the QR code inside the area
-        </Text>
-        <Text style={{color: '#CFCFCF', fontSize: 15, fontWeight: '700', paddingTop: 6}}>
-          Scanning will start automatically
-        </Text>
-        <QRCodeScanner
-          onRead={this.onSuccess}
-          topContent={
-            <Text style={styles.centerText}>
-              Go to{' '}
-              <Text style={styles.textBold}>wikipedia.org/wiki/QR_code</Text> on
-              your computer and scan the QR code.
-            </Text>
-          }
-          bottomContent={
-            <TouchableOpacity style={styles.buttonTouchable}>
-              <Text style={styles.buttonText}>OK. Got it!</Text>
-            </TouchableOpacity>
-          }
-        />
+      <View style={styles.Container}>
+        <View style={styles.Instructions}>
+          <Text style={styles.BigText}>Place the QR code inside the area</Text>
+          <Text style={styles.SmallText}>
+            Scanning will start automatically
+          </Text>
+        </View>
+        <View style={styles.topArea}>
+          <QRCodeScanner
+            onRead={this.onSuccess}
+            showMarker
+            cameraStyle={styles.camera}
+            customMarker={
+              <View style={styles.container}>
+                <Icon fill="#0076FF" name="QrMarker" height="280" width="280" />
+              </View>
+            }
+          />
+        </View>
       </View>
     );
   }

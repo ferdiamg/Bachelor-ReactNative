@@ -1,6 +1,5 @@
 import React from 'react';
 import {BleManager} from 'react-native-ble-plx';
-
 import {
   Text,
   View,
@@ -10,6 +9,7 @@ import {
   TouchableHighlight,
   Image,
 } from 'react-native';
+
 import Icon from './Icon';
 
 const styles = StyleSheet.create({
@@ -128,7 +128,7 @@ class Ble extends React.Component {
         });
       }
     });
-  }
+  };
 
   ButtonClickCheckFunction = () => () => {
     Alert.alert('Scanning..');
@@ -149,7 +149,7 @@ class Ble extends React.Component {
             <TouchableOpacity
               style={styles.SubmitButtonStyle}
               activeOpacity={0.5}
-              onPress={this.scan()}>
+              onPress={this.ButtonClickCheckFunction()}>
               <Text style={styles.TextStyle}> Scan for Beacons </Text>
             </TouchableOpacity>
           </View>

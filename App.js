@@ -9,15 +9,19 @@ import Icon from './components/Icon';
 const styles = StyleSheet.create({
   Logo: {
     position: 'absolute',
-    bottom: Platform.OS === 'ios' ? 43 : 10,
+    bottom: Platform.OS === 'ios' ? 47 : 12,
     zIndex: 1,
     display: 'flex',
     alignSelf: 'center',
     shadowColor: 'black',
     shadowOffset: {width: 0, height: 10},
     shadowOpacity: 0.1,
-    shadowRadius: 11.14,
-    elevation: 17,
+    shadowRadius: 11,
+    elevation: 50,
+    backgroundColor: 'white',
+    borderRadius: 100,
+    width: 76,
+    height: 76,
   },
   ViewContainer: {
     flex: 1,
