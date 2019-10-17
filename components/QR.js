@@ -97,7 +97,7 @@ class QR extends React.Component {
                       'translateY',
                       Dimensions.get('window').width * 0.6,
                     )}
-                />
+                  />
                 </View>
                 <Icon fill="#0076FF" name="QrMarker" height="280" width="280" />
               </View>
