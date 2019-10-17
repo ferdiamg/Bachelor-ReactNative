@@ -109,28 +109,24 @@ class Ble extends React.Component {
       devices: '',
       currentDevice: '',
     });
-    this.manager.startDeviceScan(
-      null,
-      {allowDuplicates: false},
-      (error, device) => {
-        console.log('Scannnnning....');
-        if (error) {
-          console.log(error);
-          return;
-        }
-        console.log('Device found: ' + device.name);
+    this.manager.startDeviceScan(null, null, (error, device) => {
+      console.log('Scannnnning....');
+      if (error) {
+        console.log(error);
+        return;
+      }
+      console.log('Device found: ' + device.name);
 
-        // this.setState(prevState => ({
-        //   devices: prevState.devices + ' | ' + device.name,
-        // }));
-        if (device.name === 'AMG iBeacon') {
-          this.manager.stopDeviceScan();
-          this.setState({
-            currentDevice: device.name,
-          });
-        }
-      },
-    );
+      // this.setState(prevState => ({
+      //   devices: prevState.devices + ' | ' + device.name,
+      // }));
+      if (device.name === 'AMG iBeacon') {
+        this.manager.stopDeviceScan();
+        this.setState({
+          currentDevice: device.name,
+        });
+      }
+    });
   };
 
   render() {
