@@ -19,7 +19,7 @@ To install all needed node_modules and dependencies:
 2. `cd ios && pod install && cd ..`
 3. `react-native run-ios --simulator="iPhone 11"` or `react-native run-ios --device` or `react-native run-android`
 
-## Important/troubleshooting:
+## Important/Troubleshooting:
 * react-native run-ios --simulator="iPhone 11" (iPhone X has been removed)
 * code signing needed in XCode
 

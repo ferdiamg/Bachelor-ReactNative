@@ -29,7 +29,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '800',
   },
-  container: {},
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
+  },
   camera: {
     height: 220,
     width: 220,

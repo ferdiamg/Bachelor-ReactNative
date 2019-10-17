@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '700',
     marginTop: -25,
+    textAlign: 'center',
   },
   InfoText: {
     color: '#CFCFCF',
@@ -83,7 +84,6 @@ class Ble extends React.Component {
     super();
     this.manager = new BleManager();
     this.state = {
-      showInfo: false,
       status: '',
       currentDevice: '',
       devices: '',
@@ -109,47 +109,46 @@ class Ble extends React.Component {
       devices: '',
       currentDevice: '',
     });
-    this.manager.startDeviceScan(null, null, (error, device) => {
-      console.log('Scannnnning....');
-      if (error) {
-        console.log(error);
-        return;
-      }
-      console.log('Device found: ' + device.name);
+    this.manager.startDeviceScan(
+      null,
+      {allowDuplicates: false},
+      (error, device) => {
+        console.log('Scannnnning....');
+        if (error) {
+          console.log(error);
+          return;
+        }
+        console.log('Device found: ' + device.name);
 
-      this.setState(prevState => ({
-        devices: prevState.devices + ' | ' + device.name,
-      }));
-
-      if (device.name === 'AMG iBeacon') {
-        this.manager.stopDeviceScan();
-        this.setState({
-          currentDevice: device.name,
-        });
-      }
-    });
-  };
-
-  ButtonClickCheckFunction = () => () => {
-    Alert.alert('Scanning..');
-    this.setState({
-      showInfo: true,
-    });
+        // this.setState(prevState => ({
+        //   devices: prevState.devices + ' | ' + device.name,
+        // }));
+        if (device.name === 'AMG iBeacon') {
+          this.manager.stopDeviceScan();
+          this.setState({
+            currentDevice: device.name,
+          });
+        }
+      },
+    );
   };
 
   render() {
-    if (!this.state.showInfo) {
+    const {devices, status, currentDevice} = this.state;
+    if (!(this.state.currentDevice === 'AMG iBeacon')) {
       return (
         <View>
           <View style={styles.ViewContainer}>
             <Icon fill="#E7E7E7" name="Wifi" width="140" height="140" />
-            <Text style={styles.LowerText}>Currently no Beacons found.</Text>
+            <Text style={styles.LowerText}>
+              No Beacons found.{'\n'}Please enable Bluetooth!
+            </Text>
           </View>
           <View style={styles.MainContainer}>
             <TouchableOpacity
               style={styles.SubmitButtonStyle}
               activeOpacity={0.5}
-              onPress={this.ButtonClickCheckFunction()}>
+              onPress={this.scan()}>
               <Text style={styles.TextStyle}> Scan for Beacons </Text>
             </TouchableOpacity>
           </View>
@@ -175,14 +174,14 @@ class Ble extends React.Component {
             <Text style={styles.InfoText}>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-              dolores dolores et ea rebum. Stet clita kasd gubergren, no sea
-              Lorem ipsum dolor sit amet.
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores dolores dolores et ea rebum. Stet clita kasd gubergren, no
+              sea Lorem ipsum dolor sit amet.
             </Text>
             <TouchableOpacity
               style={styles.SubmitButtonStyle}
               activeOpacity={0.5}
-              onPress={this.ButtonClickCheckFunction()}>
+              onPress={this.scan()}>
               <Text style={styles.TextStyle}> Scan for Beacons </Text>
             </TouchableOpacity>
           </View>
