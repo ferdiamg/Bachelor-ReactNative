@@ -71,6 +71,7 @@ class Camera extends React.Component {
           onRead={this.onSuccess}
           showMarker
           cameraStyle={styles.camera}
+          cameraProps={{ratio: '1:1'}}
           customMarker={
             <View style={styles.container}>
               <View style={styles.shadow}>
