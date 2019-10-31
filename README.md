@@ -20,7 +20,8 @@ To install all needed node_modules and dependencies:
 3. `react-native run-ios --simulator="iPhone 11"` or `react-native run-ios --device` or `react-native run-android`
 
 ## Important/Troubleshooting:
-* react-native run-ios --simulator="iPhone 11" (iPhone X has been removed)
+* To build a debug version: react-native run-ios --simulator="iPhone 11" (iPhone X has been removed)
+* To build a offline standalone version: react-native run-ios --configuration=release --device
 * code signing needed in XCode
 
 * since iOS 13 iOS needs AlwaysUsageBluetooth in info.plist when using BLE
