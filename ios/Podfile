@@ -3,6 +3,10 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 target 'RN_final' do
   # Pods for RN_final
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
+
+  pod 'react-native-ble-plx-swift', :path => '../node_modules/react-native-ble-plx'
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
